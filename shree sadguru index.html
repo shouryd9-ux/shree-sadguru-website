@@ -1,0 +1,811 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री Sadguru Plumbing & Civil Work Services | 24/7 Dombivli</title>
+    <meta name="description"
+        content="Professional 24/7 plumbing and civil work services in Dombivli East. Expert in leakage repair, waterproofing, bathroom fittings, and emergency plumbing.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2540',
+                        accent: '#FF6B00',
+                        neutral: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(10, 37, 64, 0.95) 0%, rgba(10, 37, 64, 0.8) 100%);
+        }
+
+        .accent-glow {
+            box-shadow: 0 4px 20px rgba(255, 107, 0, 0.3);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(10, 37, 64, 0.1);
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        .float-button {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .service-icon {
+            background: linear-gradient(135deg, #FFF5EF 0%, #FFE8D6 100%);
+        }
+
+        .sticky-mobile {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: white;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .sticky-mobile {
+                display: none;
+            }
+
+            .pb-safe {
+                padding-bottom: 0;
+            }
+        }
+
+        .pb-safe {
+            padding-bottom: 80px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="text-gray-700 bg-white pb-safe">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-40 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Shree Sadguru Logo" class="h-12 w-auto">
+                    <div>
+                        <h1 class="text-lg font-bold text-primary leading-tight">श्री Sadguru</h1>
+                        <p class="text-xs text-gray-500">Plumbing & Civil Work</p>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-accent font-medium transition">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-accent font-medium transition">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-accent font-medium transition">Services</a>
+                    <a href="#contact" class="text-gray-600 hover:text-accent font-medium transition">Contact</a>
+                    <a href="tel:8451870298"
+                        class="bg-accent text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition shadow-lg accent-glow flex items-center gap-2">
+                        <i class="fas fa-phone"></i> 8451870298
+                    </a>
+                </div>
+
+                <button class="md:hidden text-primary text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="block py-2 text-gray-600 hover:text-accent">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-accent">About</a>
+                <a href="#services" class="block py-2 text-gray-600 hover:text-accent">Services</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-accent">Contact</a>
+                <a href="tel:8451870298" class="block py-2 text-accent font-bold">Call Now: 8451870298</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&h=1080&fit=crop"
+                alt="Plumbing Work" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-3xl">
+                <div
+                    class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 text-white text-sm font-medium">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    Available 24/7 in Dombivli East
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+                    24/7 Plumbing & <span class="text-accent">Civil Work</span> Services in Dombivli
+                </h1>
+
+                <p class="text-xl text-gray-200 mb-8 leading-relaxed">
+                    Fast, reliable and affordable solutions for all your plumbing, leakage, and home repair needs.
+                </p>
+
+                <div class="space-y-4 mb-10">
+                    <div class="flex items-start gap-3 text-white">
+                        <div
+                            class="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-check text-accent text-sm"></i>
+                        </div>
+                        <span class="text-lg">Emergency service available anytime</span>
+                    </div>
+                    <div class="flex items-start gap-3 text-white">
+                        <div
+                            class="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-check text-accent text-sm"></i>
+                        </div>
+                        <span class="text-lg">Expert in leakage & waterproofing</span>
+                    </div>
+                    <div class="flex items-start gap-3 text-white">
+                        <div
+                            class="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-check text-accent text-sm"></i>
+                        </div>
+                        <span class="text-lg">One-stop solution for plumbing & civil work</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:8451870298"
+                        class="bg-accent text-white text-center px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-xl accent-glow flex items-center justify-center gap-3 pulse-animation">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Now: 8451870298
+                    </a>
+                    <a href="#contact"
+                        class="bg-white text-primary text-center px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl flex items-center justify-center gap-3">
+                        <i class="fas fa-envelope"></i>
+                        Get Free Quote
+                    </a>
+                </div>
+
+                <div class="mt-12 flex items-center gap-6 text-white/80 text-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-accent"></i>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-clock text-accent"></i>
+                        <span>Open 24 Hours</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-star text-accent"></i>
+                        <span>Local Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-neutral reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-accent/10 rounded-full"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&h=600&fit=crop"
+                        alt="Plumber at work" class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px]">
+                    <div class="absolute bottom-6 left-6 bg-white p-4 rounded-xl shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-primary">10+ Years</p>
+                                <p class="text-sm text-gray-500">Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-accent font-semibold mb-2 uppercase tracking-wide">About Us</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-primary mb-6">Your Trusted Local Service Expert</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Shree Sadguru Plumbing & Civil Work Services provides reliable and professional plumbing, civil,
+                        and maintenance services in Dombivli. With a strong focus on quality work at the right price, we
+                        help homeowners and businesses solve problems quickly and efficiently.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        From small repairs to complete bathroom and terrace work, we handle everything with precision
+                        and care. We understand that plumbing issues can't wait, which is why we offer round-the-clock
+                        service.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                            <i class="fas fa-check-circle text-accent text-xl"></i>
+                            <span class="font-semibold text-primary">24/7 Availability</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                            <i class="fas fa-check-circle text-accent text-xl"></i>
+                            <span class="font-semibold text-primary">Experienced Technicians</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                            <i class="fas fa-check-circle text-accent text-xl"></i>
+                            <span class="font-semibold text-primary">Affordable Pricing</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                            <i class="fas fa-check-circle text-accent text-xl"></i>
+                            <span class="font-semibold text-primary">Complete Home Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-accent font-semibold mb-2 uppercase tracking-wide">What We Do</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-primary">Our Services</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Complete home maintenance solutions under one roof. From
+                    emergency repairs to complete renovations.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Plumbing -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 card-hover group">
+                    <div
+                        class="w-16 h-16 service-icon rounded-2xl flex items-center justify-center text-accent text-3xl mb-6 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Plumbing Services</h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>WC fitting & repair</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Tap leakage repair</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Water blockage clearing</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Pipe fitting & replacement</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Wash basin installation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bathroom -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 card-hover group">
+                    <div
+                        class="w-16 h-16 service-icon rounded-2xl flex items-center justify-center text-accent text-3xl mb-6 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Bathroom & Geyser</h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Geyser repair</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>WC seat cover replacement</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Bathroom fittings</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Shower installation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Civil Work -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 card-hover group">
+                    <div
+                        class="w-16 h-16 service-icon rounded-2xl flex items-center justify-center text-accent text-3xl mb-6 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Civil Work</h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Brickwork</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Plaster work</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Tile fitting</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Wall repairs</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Waterproofing -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 card-hover group">
+                    <div
+                        class="w-16 h-16 service-icon rounded-2xl flex items-center justify-center text-accent text-3xl mb-6 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-tint-slash"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Waterproofing</h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Terrace leakage solutions</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Bathroom waterproofing</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Long-lasting protection</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Crack sealing</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Additional -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 card-hover group md:col-span-2 lg:col-span-1">
+                    <div
+                        class="w-16 h-16 service-icon rounded-2xl flex items-center justify-center text-accent text-3xl mb-6 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Additional Services</h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>House painting</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>Deep cleaning services</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-accent mt-1 text-sm"></i>
+                            <span>General maintenance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-primary text-white reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-accent font-semibold mb-2 uppercase tracking-wide">Our Promise</h2>
+                <h3 class="text-3xl md:text-4xl font-bold">Why People Trust Us</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300">
+                    <div
+                        class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4 float-button">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">24/7 Emergency Support</h4>
+                    <p class="text-gray-300 text-sm">Always available when you need us most</p>
+                </div>
+
+                <div
+                    class="text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4 float-button"
+                        style="animation-delay: 0.5s">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Fast Response Time</h4>
+                    <p class="text-gray-300 text-sm">Quick arrival and efficient service</p>
+                </div>
+
+                <div
+                    class="text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4 float-button"
+                        style="animation-delay: 1s">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Skilled Team</h4>
+                    <p class="text-gray-300 text-sm">Experienced and trained technicians</p>
+                </div>
+
+                <div
+                    class="text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4 float-button"
+                        style="animation-delay: 1.5s">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">No Hidden Charges</h4>
+                    <p class="text-gray-300 text-sm">Transparent and affordable pricing</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div
+                    class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
+                    <i class="fas fa-star text-accent"></i>
+                    <span class="font-semibold">Complete home solution under one roof</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgent CTA -->
+    <section class="py-20 bg-accent reveal">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Need Urgent Help?</h2>
+            <p class="text-xl text-white/90 mb-10">We are available 24/7 to solve your problem quickly and
+                professionally. Don't let a leak become a flood!</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:8451870298"
+                    class="bg-white text-accent px-10 py-5 rounded-full font-bold text-xl hover:bg-gray-100 transition shadow-xl flex items-center justify-center gap-3 pulse-animation">
+                    <i class="fas fa-phone-alt"></i>
+                    Call Now
+                </a>
+                <a href="https://wa.me/918451870298" target="_blank"
+                    class="bg-primary text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-gray-900 transition shadow-xl flex items-center justify-center gap-3">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp Now
+                </a>
+            </div>
+
+            <p class="mt-6 text-white/80 font-medium">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                Serving Dombivli East & Nearby Areas
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-neutral reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-accent font-semibold mb-2 uppercase tracking-wide">Get In Touch</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-primary mb-6">Contact Us</h3>
+                    <p class="text-gray-600 mb-8">Ready to solve your plumbing and civil work needs? Reach out to us
+                        anytime.</p>
+
+                    <div class="space-y-6">
+                        <a href="tel:8451870298"
+                            class="flex items-center gap-4 bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group">
+                            <div
+                                class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center text-accent text-2xl group-hover:bg-accent group-hover:text-white transition">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 mb-1">Phone (24/7)</p>
+                                <p class="text-xl font-bold text-primary">8451870298</p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:shreesadgurumanagementfacility@gmail.com"
+                            class="flex items-center gap-4 bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group">
+                            <div
+                                class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center text-accent text-2xl group-hover:bg-accent group-hover:text-white transition">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 mb-1">Email</p>
+                                <p class="text-lg font-bold text-primary break-all">
+                                    shreesadgurumanagementfacility@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 bg-white p-6 rounded-2xl shadow-sm">
+                            <div
+                                class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center text-accent text-2xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 mb-1">Service Area</p>
+                                <p class="text-lg font-bold text-primary">Dombivli East, Maharashtra</p>
+                                <p class="text-sm text-gray-500">And nearby locations</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-primary p-6 rounded-2xl shadow-sm text-white">
+                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-white-300 mb-1">Working Hours</p>
+                                <p class="text-lg font-bold">Open 24 Hours</p>
+                                <p class="text-sm text-white-300">Available all day, every day</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 shadow-xl">
+                    <h4 class="text-2xl font-bold text-primary mb-6">Get Free Quote</h4>
+                    <form id="quoteForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+
+                        <input type="text" id="name" placeholder="Your Name" required
+                            class="w-full px-4 py-3 border rounded-xl"><br>
+
+                        <input type="tel" id="phone" placeholder="Phone Number" required
+                            class="w-full px-4 py-3 border rounded-xl"><br>
+
+                        <select id="service" class="w-full px-4 py-3 border rounded-xl">
+                            <option>Plumbing Service</option>
+                            <option>Civil Work</option>
+                            <option>Waterproofing</option>
+                            <option>Emergency Repair</option>
+                        </select><br>
+
+                        <textarea id="message" placeholder="Describe your problem"
+                            class="w-full px-4 py-3 border rounded-xl"></textarea><br>
+
+                        <button type="submit" class="w-full bg-orange-500 text-white py-4 rounded-xl font-bold">
+                            Send on WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-primary text-white pt-16 pb-24 md:pb-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <div
+                                class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                                <i class="fas fa-faucet"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold leading-tight">Shree Sadguru</h3>
+                                <p class="text-xs text-gray-400">Plumbing & Civil Work</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Professional plumbing and civil work services in Dombivli. Available 24/7
+                            for all your home repair needs.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+                            <li><a href="#about" class="hover:text-accent transition">About Us</a></li>
+                            <li><a href="#services" class="hover:text-accent transition">Services</a>
+                            </li>
+                            <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-lg mb-4">Contact Info</h4>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-phone text-accent"></i>
+                                <a href="tel:8451870298" class="hover:text-white transition">8451870298</a>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-envelope text-accent"></i>
+                                <a href="mailto:shreesadgurumanagementfacility@gmail.com"
+                                    class="hover:text-white transition text-sm">shreesadgurumanagementfacility@gmail.com</a>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-map-marker-alt text-accent"></i>
+                                <span>Dombivli East, Maharashtra</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-accent font-semibold">
+                                <i class="fas fa-clock"></i>
+                                <span>Open 24 Hours</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">&copy; 2024 Shree Sadguru Plumbing & Civil Work
+                        Services. All rights reserved.</p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/918451870298"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Mobile Sticky Bottom Bar -->
+        <div class="sticky-mobile md:hidden">
+            <div class="flex items-center justify-between px-4 py-3">
+                <div class="flex flex-col">
+                    <span class="text-xs text-gray-500">Call Now - 24/7 Available</span>
+                    <a href="tel:8451870298" class="text-lg font-bold text-primary">8451870298</a>
+                </div>
+                <div class="flex gap-3">
+                    <a href="https://wa.me/918451870298"
+                        class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-xl shadow-lg">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="tel:8451870298"
+                        class="bg-accent text-white px-6 py-3 rounded-full font-bold shadow-lg flex items-center gap-2">
+                        <i class="fas fa-phone"></i>
+                        Call
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating WhatsApp Button (Desktop) -->
+        <a href="https://wa.me/918451870298" target="_blank"
+            class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition z-40 hidden md:flex float-button">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <script>
+            // Mobile Menu Toggle
+            function toggleMobileMenu() {
+                const menu = document.getElementById('mobileMenu');
+                menu.classList.toggle('hidden');
+            }
+
+
+            // Scroll Animation Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Navbar Scroll Effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('shadow-md');
+                } else {
+                    navbar.classList.remove('shadow-md');
+                }
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('#mobileMenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                });
+            });
+            function sendToWhatsApp(e) {
+                e.preventDefault();
+
+                const name = document.getElementById("name").value;
+                const phone = document.getElementById("phone").value;
+                const service = document.getElementById("service").value;
+                const message = document.getElementById("message").value;
+
+                const text = encodeURIComponent(
+                    `*New Service Request*
+            Name: ${name}
+            Phone: ${phone}
+            Service: ${service}
+            Message: ${message}`
+                );
+
+                const number = "918451870298";
+
+                window.open(`https://wa.me/${number}?text=${text}`, "_blank");
+            }
+        </script>
+</body>
+
+</html>
